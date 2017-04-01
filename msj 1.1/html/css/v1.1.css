@@ -240,11 +240,11 @@ header .right {
         right: 21px;
         top: 16px;
         cursor: pointer; }
-      .login-box .box-main .box p.message {
+      .login-box .box-main .box p.message2 {
         font-size: 16px;
         text-align: center;
         cursor: pointer; }
-        .login-box .box-main .box p.message i {
+        .login-box .box-main .box p.message2 i {
           width: 16px;
           height: 16px;
           display: inline-block;
@@ -253,7 +253,7 @@ header .right {
           margin-bottom: 3px;
           margin-right: 5px;
           cursor: pointer; }
-          .login-box .box-main .box p.message i.checked {
+          .login-box .box-main .box p.message2 i.checked {
             width: 16px;
             height: 16px;
             display: inline-block;
@@ -262,7 +262,7 @@ header .right {
             margin-bottom: 3px;
             margin-right: 5px;
             cursor: pointer; }
-        .login-box .box-main .box p.message a {
+        .login-box .box-main .box p.message2 a {
           color: #96515b; }
       .login-box .box-main .box .register-btn {
         width: 550px;

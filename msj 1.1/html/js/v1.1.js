@@ -19,11 +19,11 @@ $(document).on('click', '.passwordImg2', function () {
     $(this).removeClass('passwordImg2').addClass('passwordImg');
 })
 
-$(document).on('click', 'p.message', function () {
-    if ($('p.message i').hasClass('checked')) {
-        $('p.message i').removeClass('checked');
+$(document).on('click', 'p.message2', function () {
+    if ($('p.message2 i').hasClass('checked')) {
+        $('p.message2 i').removeClass('checked');
     } else {
-        $('p.message i').addClass('checked');
+        $('p.message2 i').addClass('checked');
     }
 
 })

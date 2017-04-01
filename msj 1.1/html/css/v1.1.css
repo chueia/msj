@@ -1,0 +1,594 @@
+* {
+  box-sizing: border-box; }
+
+a:hover {
+  color: #96515b; }
+
+input[placeholder] {
+  color: #666 !important; }
+
+header {
+  height: 60px;
+  padding: 5px 0; }
+
+header .right {
+  float: right;
+  padding-top: 10px;
+  z-index: 999; }
+  header .right .login {
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    line-height: 30px;
+    font-size: 16px; }
+    header .right .login .myName {
+      display: inline-block;
+      position: relative;
+      height: 45px; }
+      header .right .login .myName:hover .box {
+        display: block; }
+      header .right .login .myName .box {
+        width: 100px;
+        height: 104px;
+        position: absolute;
+        bottom: -90px;
+        left: -19px;
+        background: url("./../img/v1.1/mynameBG.png");
+        z-index: 999;
+        text-align: center;
+        padding: 20px 15px;
+        display: none; }
+        header .right .login .myName .box .btn {
+          width: 70px;
+          height: 26px;
+          background: #96515b;
+          color: white;
+          line-height: 26px;
+          text-align: center;
+          border-radius: 5px;
+          font-size: 14px;
+          display: block;
+          margin-top: 10px;
+          cursor: pointer; }
+          header .right .login .myName .box .btn:hover {
+            background: #7c434b; }
+    header .right .login span {
+      color: #eee;
+      margin: 0 5px; }
+  header .right .updata-room {
+    width: 100px;
+    height: 30px;
+    background: url("../img/v1.1/updataRoom.png");
+    float: right;
+    cursor: pointer; }
+    header .right .updata-room:hover {
+      background: url("../img/v1.1/updataRoomH.png"); }
+
+.shade {
+  background: rgba(0, 0, 0, 0.519);
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  top: 0; }
+  .shade .ing {
+    display: none; }
+  .shade .message {
+    width: 485px;
+    border-radius: 5px;
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+    padding: 50px 30px; }
+    .shade .message .close {
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      transition: 1s; }
+      .shade .message .close:hover {
+        transform: rotate(360deg); }
+    .shade .message h1 {
+      text-align: center;
+      font-size: 24px;
+      color: #333; }
+    .shade .message p.p1 {
+      font-size: 18px;
+      margin-top: 50px;
+      line-height: 35px; }
+    .shade .message .btn-box {
+      margin-top: 40px;
+      text-align: center; }
+      .shade .message .btn-box .btn {
+        display: inline-block;
+        width: 70px;
+        height: 30px;
+        border-radius: 5px;
+        background: #96515b;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        cursor: pointer; }
+        .shade .message .btn-box .btn:hover {
+          background: #7c434b; }
+      .shade .message .btn-box .btn-ok2 {
+        background: white;
+        border: 1px solid #eee;
+        color: #999999;
+        box-sizing: content-box;
+        margin-left: 50px; }
+        .shade .message .btn-box .btn-ok2:hover {
+          background: #f6f6f6;
+          color: black; }
+
+.login-box {
+  width: 647px;
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 10px;
+  padding: 0 13px;
+  display: block; }
+  .login-box .box1 {
+    display: none; }
+  .login-box .box-top {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    height: 72px; }
+    .login-box .box-top .btn {
+      width: 130px;
+      height: 100%;
+      line-height: 70px;
+      display: inline-block;
+      font-size: 20px;
+      color: #333;
+      margin-left: 80px;
+      cursor: pointer;
+      position: relative;
+      transition: 0.3s; }
+      .login-box .box-top .btn p {
+        text-align: center; }
+      .login-box .box-top .btn img {
+        position: absolute;
+        bottom: 1px;
+        left: 1px;
+        display: none; }
+    .login-box .box-top .btn.active {
+      color: #96515b; }
+      .login-box .box-top .btn.active img {
+        display: block; }
+    .login-box .box-top .btn2 {
+      margin-left: 180px; }
+  .login-box .box-main {
+    padding: 0 36px; }
+    .login-box .box-main .box {
+      margin: 30px 0;
+      position: relative;
+      overflow: hidden; }
+      .login-box .box-main .box .forget {
+        float: right;
+        color: #999;
+        cursor: pointer;
+        font-size: 16px; }
+        .login-box .box-main .box .forget:hover {
+          color: #96515b; }
+      .login-box .box-main .box .phone {
+        width: 550px;
+        height: 57px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        outline: none;
+        padding: 0 20px;
+        font-size: 16px; }
+        .login-box .box-main .box .phone:focus {
+          border: 1px solid #96515b;
+          box-shadow: 0 0 5px #96515b; }
+      .login-box .box-main .box .iden {
+        width: 360px;
+        height: 57px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        outline: none;
+        padding: 0 20px;
+        font-size: 16px; }
+        .login-box .box-main .box .iden:focus {
+          border: 1px solid #96515b;
+          box-shadow: 0 0 5px #96515b; }
+      .login-box .box-main .box .idenImg {
+        width: 170px;
+        height: 56px;
+        background: #e6e6e6;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -8px;
+        border-radius: 5px;
+        margin-left: 15px;
+        line-height: 56px;
+        text-align: center;
+        color: white;
+        font-size: 16px; }
+      .login-box .box-main .box .password {
+        width: 550px;
+        height: 57px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        outline: none;
+        padding: 0 20px;
+        font-size: 16px; }
+        .login-box .box-main .box .password:focus {
+          border: 1px solid #96515b;
+          box-shadow: 0 0 5px #96515b; }
+      .login-box .box-main .box .passwordImg {
+        width: 21px;
+        height: 22px;
+        background: url("./../img/v1.1/password.png");
+        position: absolute;
+        right: 21px;
+        top: 16px;
+        cursor: pointer; }
+      .login-box .box-main .box .passwordImg2 {
+        width: 20px;
+        height: 22px;
+        background: url("./../img/v1.1/passwordH.png");
+        position: absolute;
+        right: 21px;
+        top: 16px;
+        cursor: pointer; }
+      .login-box .box-main .box p.message {
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer; }
+        .login-box .box-main .box p.message i {
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          vertical-align: middle;
+          background: url("./../img/v1.1/checkBox.png");
+          margin-bottom: 3px;
+          margin-right: 5px;
+          cursor: pointer; }
+          .login-box .box-main .box p.message i.checked {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url("./../img/v1.1/checkBoxH.png");
+            margin-bottom: 3px;
+            margin-right: 5px;
+            cursor: pointer; }
+        .login-box .box-main .box p.message a {
+          color: #96515b; }
+      .login-box .box-main .box .register-btn {
+        width: 550px;
+        height: 56px;
+        background: #e6e6e6;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -8px;
+        border-radius: 5px;
+        margin-left: 15px;
+        line-height: 56px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        margin-left: 0;
+        background: #96515b;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 5px; }
+        .login-box .box-main .box .register-btn:hover {
+          background: #7c434b; }
+    .login-box .box-main .idenBtn {
+      width: 170px;
+      height: 56px;
+      background: #e6e6e6;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -8px;
+      border-radius: 5px;
+      margin-left: 15px;
+      line-height: 56px;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      background: #96515b;
+      cursor: pointer; }
+      .login-box .box-main .idenBtn:hover {
+        background: #7c434b; }
+    .login-box .box-main .idenBtn2 {
+      width: 170px;
+      height: 56px;
+      background: #e6e6e6;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -8px;
+      border-radius: 5px;
+      margin-left: 15px;
+      line-height: 56px;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      cursor: pointer; }
+
+.R-password {
+  display: none; }
+  .R-password .box-top a {
+    float: right;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-right: 30px;
+    color: #999; }
+    .R-password .box-top a:hover {
+      color: #96515b; }
+
+.publish-container {
+  min-height: 780px;
+  background: white; }
+  .publish-container .banner {
+    width: 100%;
+    height: 240px;
+    background: url("./../img/v1.1/banner1.png"); }
+  .publish-container .publish-main {
+    width: 530px;
+    margin: 50px auto; }
+    .publish-container .publish-main h1 {
+      font-size: 30px;
+      margin-bottom: 50px; }
+      .publish-container .publish-main h1 img {
+        vertical-align: bottom;
+        margin-right: 10px; }
+    .publish-container .publish-main .publish-box {
+      margin: 30px 0;
+      font-size: 18px;
+      overflow: hidden; }
+      .publish-container .publish-main .publish-box .left {
+        width: 135px;
+        text-align: right;
+        padding: 5px 0; }
+        .publish-container .publish-main .publish-box .left span {
+          vertical-align: middle;
+          color: #bf0000;
+          margin-right: 5px; }
+        .publish-container .publish-main .publish-box .left p {
+          display: inline-block; }
+      .publish-container .publish-main .publish-box .right {
+        width: 300px;
+        margin-right: 50px; }
+        .publish-container .publish-main .publish-box .right input {
+          width: 290px;
+          height: 38px;
+          border: 1px solid #e6e6e6;
+          border-radius: 5px;
+          outline: none;
+          padding: 0 10px; }
+          .publish-container .publish-main .publish-box .right input:focus {
+            border: 1px solid #96515b;
+            box-shadow: 0 0 5px #96515b; }
+        .publish-container .publish-main .publish-box .right .up-btn {
+          width: 290px;
+          height: 38px;
+          border-radius: 5px;
+          background: #96515b;
+          line-height: 38px;
+          text-align: center;
+          color: white;
+          cursor: pointer; }
+          .publish-container .publish-main .publish-box .right .up-btn:hover {
+            background: #7c434b; }
+  .publish-container .publish-success {
+    width: 610px;
+    text-align: center; }
+    .publish-container .publish-success .publish-box p {
+      font-size: 18px;
+      margin: 20px 0;
+      text-align: left; }
+  .publish-container .landlord-main {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 1000px;
+    overflow: hidden;
+    margin-top: 20px; }
+    .publish-container .landlord-main .left {
+      width: 189px;
+      height: 740px;
+      border: 1px solid #eee; }
+      .publish-container .landlord-main .left .title {
+        width: 187px;
+        height: 63px;
+        line-height: 63px;
+        padding: 0 20px;
+        background: url("./../img/v1.1/bg1.png"); }
+        .publish-container .landlord-main .left .title h2 {
+          font-size: 20px;
+          color: white;
+          font-weight: bold; }
+      .publish-container .landlord-main .left .landlord-title {
+        width: 189px;
+        height: 45px;
+        background: #f4edee;
+        border-top: 2px solid #98535c;
+        margin-top: 30px;
+        padding-left: 20px;
+        line-height: 45px; }
+        .publish-container .landlord-main .left .landlord-title p {
+          font-size: 18px;
+          color: #96515b;
+          font-weight: bold; }
+      .publish-container .landlord-main .left .landlord-tab {
+        width: 189px;
+        height: 40px;
+        padding-left: 20px;
+        line-height: 40px;
+        margin-top: 30px;
+        cursor: pointer;
+        position: relative; }
+        .publish-container .landlord-main .left .landlord-tab:hover, .publish-container .landlord-main .left .landlord-tab.active {
+          background: #f8f8f8;
+          color: #96515b; }
+          .publish-container .landlord-main .left .landlord-tab:hover p:before, .publish-container .landlord-main .left .landlord-tab.active p:before {
+            content: "";
+            height: 18px;
+            width: 4px;
+            background: #98535c;
+            position: absolute;
+            left: 0px;
+            top: 11px; }
+        .publish-container .landlord-main .left .landlord-tab p {
+          font-size: 18px;
+          height: 18px; }
+    .publish-container .landlord-main .right {
+      float: right;
+      width: 1000px; }
+      .publish-container .landlord-main .right .title {
+        width: 1000px;
+        height: 60px;
+        border: 1px solid #e6e6e6;
+        padding: 0 20px;
+        line-height: 60px;
+        font-size: 16px;
+        color: #666; }
+      .publish-container .landlord-main .right .search {
+        width: 1000px;
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid #e6e6e6; }
+        .publish-container .landlord-main .right .search input {
+          width: 280px;
+          height: 35px;
+          border: 1px solid #e6e6e6;
+          padding: 0 10px;
+          outline: none; }
+          .publish-container .landlord-main .right .search input:focus {
+            border: 1px solid #96515b;
+            box-shadow: 0 0 5px #96515b; }
+        .publish-container .landlord-main .right .search .search-btn {
+          width: 70px;
+          height: 30px;
+          border-radius: 5px;
+          background: #96515b;
+          line-height: 30px;
+          text-align: center;
+          color: white;
+          cursor: pointer;
+          display: inline-block;
+          margin-left: 20px; }
+          .publish-container .landlord-main .right .search .search-btn:hover {
+            background: #7c434b; }
+      .publish-container .landlord-main .right .house-manage {
+        width: 1000px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px; }
+        .publish-container .landlord-main .right .house-manage .publish-btn {
+          width: 100px;
+          height: 30px;
+          border-radius: 5px;
+          background: #96515b;
+          line-height: 30px;
+          text-align: center;
+          color: white;
+          cursor: pointer;
+          border-radius: 20px;
+          display: inline-block; }
+          .publish-container .landlord-main .right .house-manage .publish-btn:hover {
+            background: #7c434b; }
+        .publish-container .landlord-main .right .house-manage .manage-btn {
+          width: 100px;
+          height: 30px;
+          border-radius: 5px;
+          background: #96515b;
+          line-height: 30px;
+          text-align: center;
+          color: white;
+          cursor: pointer;
+          border-radius: 20px;
+          display: inline-block;
+          margin-left: 20px; }
+          .publish-container .landlord-main .right .house-manage .manage-btn:hover {
+            background: #7c434b; }
+      .publish-container .landlord-main .right .table ul {
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        border-bottom: 1px solid #e6e6e6; }
+        .publish-container .landlord-main .right .table ul li {
+          float: left;
+          width: 100px; }
+          .publish-container .landlord-main .right .table ul li:nth-child(2) {
+            width: 150px;
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .publish-container .landlord-main .right .table ul li:nth-child(8) {
+            width: 150px; }
+          .publish-container .landlord-main .right .table ul li input.chk-1 {
+            display: none; }
+            .publish-container .landlord-main .right .table ul li input.chk-1 + label {
+              width: 13px;
+              height: 13px;
+              border: 1px solid #e6e6e6;
+              box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+              display: inline-block;
+              position: relative;
+              text-align: left; }
+            .publish-container .landlord-main .right .table ul li input.chk-1:checked + label {
+              background-color: #ECF2F7; }
+            .publish-container .landlord-main .right .table ul li input.chk-1:checked + label:after {
+              content: '\2714';
+              position: absolute;
+              top: -18px;
+              left: 0px;
+              color: #98525c;
+              width: 100%;
+              text-align: center;
+              font-size: 12px;
+              width: 13px;
+              height: 13px;
+              padding: 1px 0 0 0;
+              vertical-align: text-top;
+              display: inline-block; }
+          .publish-container .landlord-main .right .table ul li a {
+            color: #96515b; }
+      .publish-container .landlord-main .right .table .table-title {
+        background: #f8f8f8; }
+      .publish-container .landlord-main .right .table .stop li {
+        color: #999; }
+        .publish-container .landlord-main .right .table .stop li:nth-child(1) {
+          color: #333; }
+        .publish-container .landlord-main .right .table .stop li:nth-child(3) {
+          color: #333; }
+      .publish-container .landlord-main .right .page {
+        margin-top: 50px; }
+      .publish-container .landlord-main .right .none-main {
+        margin-top: 200px;
+        text-align: center; }
+        .publish-container .landlord-main .right .none-main .none-btn {
+          width: 150px;
+          height: 54px;
+          border-radius: 5px;
+          background: #96515b;
+          line-height: 54px;
+          text-align: center;
+          color: white;
+          cursor: pointer;
+          margin: 0 auto;
+          font-size: 20px; }
+          .publish-container .landlord-main .right .none-main .none-btn:hover {
+            background: #7c434b; }
+          .publish-container .landlord-main .right .none-main .none-btn img {
+            vertical-align: middle;
+            margin-top: -3px;
+            margin-right: 5px; }
+        .publish-container .landlord-main .right .none-main p {
+          font-size: 18px;
+          margin-top: 50px; }
+
+/*# sourceMappingURL=v1.1.css.map */
